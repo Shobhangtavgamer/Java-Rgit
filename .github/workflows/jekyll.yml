@@ -29,6 +29,7 @@ concurrency:
 jobs:
   # Build job
   build:
+    if: ${{ hashFiles('Gemfile') != '' && hashFiles('_config.yml') != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -54,6 +55,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: ${{ hashFiles('Gemfile') != '' && hashFiles('_config.yml') != '' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
