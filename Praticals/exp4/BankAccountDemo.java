@@ -16,7 +16,7 @@ class BankAccount {
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("Deposited: ₹" + amount);
+            System.out.println("Deposited: " + amount);
         } else {
             System.out.println("Invalid deposit amount!");
         }
@@ -25,9 +25,9 @@ class BankAccount {
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            System.out.println("Withdrawn: ₹" + amount);
+            System.out.println("Withdrawn: " + amount);
         } else if (amount > balance) {
-            System.out.println("Insufficient balance! Current balance: ₹" + balance);
+            System.out.println("Insufficient balance! Current balance: " + balance);
         } else {
             System.out.println("Invalid withdrawal amount!");
         }
@@ -38,7 +38,7 @@ class BankAccount {
         System.out.println("Owner Name: " + ownerName);
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Account Type: " + accountType);
-        System.out.println("Balance: ₹" + balance);
+        System.out.println("Balance: " + balance);
         System.out.println("-----------------------");
     }
 }
