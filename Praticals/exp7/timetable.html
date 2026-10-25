@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        td {
+            background-color: #ecf0f1;
+        }
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        td.day-col {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        td.time-col {
+            background-color: #34495e;
+            color: white;
+            font-weight: bold;
+        }
+        td.subject {
+            background-color: white;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        tr:hover td {
+            background-color: #e8f4fd;
+        }
+        .highlight {
+            background-color: #f39c12;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Time Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-col">9:00 AM - 10:00 AM</td>
+                    <td class="subject">Mathematics</td>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Computer Science</td>
+                </tr>
+                <tr>
+                    <td class="time-col">10:00 AM - 11:00 AM</td>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">Mathematics</td>
+                    <td class="subject">Biology</td>
+                    <td class="subject">Physics</td>
+                </tr>
+                <tr>
+                    <td class="time-col">11:00 AM - 12:00 PM</td>
+                    <td class="subject">Chemistry</td>
+                    <td class="subject">Mathematics</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Physics</td>
+                    <td class="subject">Chemistry</td>
+                </tr>
+                <tr>
+                    <td class="time-col">12:00 PM - 1:00 PM</td>
+                    <td colspan="5" class="highlight">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td class="time-col">1:00 PM - 2:00 PM</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Biology</td>
+                    <td class="subject">Physics Lab</td>
+                    <td class="subject">Chemistry Lab</td>
+                    <td class="subject">Mathematics</td>
+                </tr>
+                <tr>
+                    <td class="time-col">2:00 PM - 3:00 PM</td>
+                    <td class="subject">Biology</td>
+                    <td class="subject">English</td>
+                    <td class="subject">Physics Lab</td>
+                    <td class="subject">Chemistry Lab</td>
+                    <td class="subject">Computer Lab</td>
+                </tr>
+                <tr>
+                    <td class="time-col">3:00 PM - 4:00 PM</td>
+                    <td class="subject">Computer Science</td>
+                    <td class="subject">Computer Lab</td>
+                    <td class="subject">Library</td>
+                    <td class="subject">Sports</td>
+                    <td class="subject">Library</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
